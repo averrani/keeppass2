@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>KeepPass : Gestionnaire de secrets</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+
+    <!-- Header will be loaded here -->
+    <script src="../header/loadHeader.js"></script>
+
+</head>
+
+<body>
+    <div id="header-container"></div> <!-- Conteneur pour le header -->
+
+    <form method="post" id="addCustomersForm" onsubmit="return false">
+        <div class="form-row">
+            <div class="form-group col-md-7">
+                <label for="website">Site Web</label>
+                <input type="text" class="form-control" id="website" placeholder="abcdef.com">
+            </div>
+            <div class="form-group col-md-7">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" class="form-control" id="pseudo" placeholder="admin">
+            </div>
+            <div class="form-group col-md-7">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="azertyuiop@mail.com">
+            </div>
+            <div class="form-group col-md-7">
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enregistrer Le Nouveau
+                Client</button>
+        <!-- bouton de retour a la liste des clients -->
+        <a href="http://localhost:3000/liste/list.html" class="btn btn-primary btn-dark">Retour à la liste des clients</a>
+    </form>
+
+    <div id='alert-message' role='alert'></div>
+</body>
